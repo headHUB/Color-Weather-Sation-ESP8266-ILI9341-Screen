@@ -26,8 +26,8 @@ See more at http://blog.squix.ch
 // #define DHTPIN D2 // NodeMCU
 #define DHTPIN D8 // Wemos D1R2 Mini (DHT not currently implemented here)
 
-//#define DHTTYPE DHT11   // DHT 11
-#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321 (DHT not currently implemented here)
+#define DHTTYPE DHT11   // DHT 11
+//#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321 (DHT not currently implemented here)
 //#define DHTTYPE DHT21   // DHT 21 (AM2301)
 
 #if DHTTYPE == DHT22
@@ -93,8 +93,8 @@ bool readyForMidPanelUpdate = false;
 bool readyForBotPanelUpdate = false;
 
 // Pins for the ILI9341
-#define TFT_DC 2
-#define TFT_CS 5
+#define TFT_DC D2
+#define TFT_CS D4
 
 // For controlling rotating mid-panel
 int midPanelNumber = 0;
